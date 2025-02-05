@@ -1,1 +1,31 @@
-<p>outlet works!</p>
+
+
+<mat-tab-group>
+  <mat-tab label="NgComponentOutlet">
+
+    <div class="demo">
+
+      <mat-checkbox [(ngModel)]="isAdmin">Administrateur</mat-checkbox>
+      <ng-container *ngComponentOutlet="getComponent()" />
+
+    </div>
+
+
+  </mat-tab>
+  <mat-tab label="NgTemplateOutlet">
+
+    <ng-template #helloTemplate let-name="name" class="hello-template">
+      <span class="hello">Bonjour {{name}}</span>
+    </ng-template>
+
+    <ng-container *ngTemplateOutlet="helloTemplate; context: {name: 'Léo'}"/>
+
+  </mat-tab>
+
+
+
+</mat-tab-group>
+
+
+
+
