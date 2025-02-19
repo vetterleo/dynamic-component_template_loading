@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InnerItemComponent } from './inner-item.component';
+import { WeatherComponent } from './weather.component';
 
-describe('InnerItemComponent', () => {
-  let component: InnerItemComponent;
-  let fixture: ComponentFixture<InnerItemComponent>;
+describe('WeatherComponent', () => {
+  let component: WeatherComponent;
+  let fixture: ComponentFixture<WeatherComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [InnerItemComponent]
+      imports: [WeatherComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(InnerItemComponent);
+    fixture = TestBed.createComponent(WeatherComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

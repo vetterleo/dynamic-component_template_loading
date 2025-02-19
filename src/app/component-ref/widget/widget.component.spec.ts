@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OutletComponent } from './outlet.component';
+import { WidgetComponent } from './widget.component';
 
-describe('OutletComponent', () => {
-  let component: OutletComponent;
-  let fixture: ComponentFixture<OutletComponent>;
+describe('WidgetComponent', () => {
+  let component: WidgetComponent;
+  let fixture: ComponentFixture<WidgetComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OutletComponent]
+      imports: [WidgetComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(OutletComponent);
+    fixture = TestBed.createComponent(WidgetComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

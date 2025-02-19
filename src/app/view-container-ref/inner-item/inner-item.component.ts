@@ -16,4 +16,8 @@ export class InnerItemComponent {
     this.viewContainer.createComponent(LeafContentComponent);
   }
 
+  removeContent() {
+    this.viewContainer.clear();
+  }
+
 }

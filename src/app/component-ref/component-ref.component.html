@@ -1,0 +1,22 @@
+
+<div class="content">
+
+  <button mat-button (click)="createComponent()">Create Component 1</button>
+  <button mat-button (click)="createComponent2()">Create Component 2</button>
+
+  <ng-template #content>
+
+    <app-weather #content></app-weather>
+
+  </ng-template>
+
+
+  <ng-container #myContainer></ng-container>
+</div>
+
+
+<div class="extra">
+  <app-weather #content></app-weather>
+</div>
+
+
